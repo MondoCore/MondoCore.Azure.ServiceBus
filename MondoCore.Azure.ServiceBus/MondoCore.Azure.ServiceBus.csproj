@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>$(AssemblyName)</Title>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Jim Lightfoot</Authors>
+    <Company>MondoCore</Company>
+    <Description>Wrapper around Azure ServiceBus client library using MondoCore IMessageQueue interface</Description>
+    <Copyright>© Jim Lightfoot, All Rights Reserved</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/MondoCore/MondoCore.Azure.ServiceBus</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>mondocore;azure;servicebus,messaging</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.19.0" />
+    <PackageReference Include="MondoCore.Common" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>
